@@ -1,0 +1,358 @@
+.movie-  etails {
+  /* يأخذ الأعمدة الأربعة كاملة */
+  grid-column: 1 / -1;
+
+  /* العرض */
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 40px 0;
+  padding: 35px;
+
+  border-radius: 24px;
+  
+ 
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   Main section
+========================= */
+
+.movie-details-main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+
+/* =========================
+   Poster
+========================= */
+
+.movie-details-poster {
+  flex: 0 0 300px;
+}
+
+.movie-details-poster img {
+  width: 100%;
+  display: block;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   Movie information
+========================= */
+
+.movie-details-info {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.movie-details-title {
+  margin: 0 0 12px;
+
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.movie-details-tagline {
+  margin: 0 0 30px;
+
+
+  font-size: 18px;
+  font-style: italic;
+}
+
+
+/* =========================
+   Meta information
+========================= */
+
+.movie-details-meta {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.movie-detail-item {
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: #D9D2E8;
+
+  border: 1px solid #333341;
+}
+
+.detail-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  
+
+  font-size: 14px;
+}
+
+.detail-value {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Trailer Button
+========================= */
+
+.div-buttom {
+  width: 100%;
+}
+
+.Watch-the-Trailer {
+  width: 100%;
+
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #7c3aed;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+.iframe {
+  width: min(100%, 900px);
+  aspect-ratio: 16 / 9;
+
+  margin: 45px auto 0;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #17151e;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+
+  border: 1px solid #51416b;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  border: none;
+}
+
+.Watch-the-Trailer:hover {
+  background: #6d28d9;
+
+  transform: translateY(-2px);
+}
+
+.Watch-the-Trailer:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   Overview
+========================= */
+
+.movie-details-description {
+  margin-top: 40px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid #333341;
+}
+
+.section-title {
+  margin: 0 0 15px;
+
+  font-size: 22px;
+}
+
+.movie-overview {
+  margin: 0;
+
+  
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   Genres
+========================= */
+
+.movie-details-genres {
+  margin-top: 30px;
+}
+
+.genres-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  padding:  10px ;
+  margin: 0;
+
+  list-style: none;
+}
+
+.genre-item {
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  background: #302f3d;
+
+  border: 1px solid #454455;
+
+  color: #ddd;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.genre-item:hover {
+  background: #3b394b;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   YouTube Trailer
+========================= */
+
+.movie-details iframe {
+  display: block;
+
+  width: 100%;
+  max-width: 800px;
+
+  aspect-ratio: 16 / 9;
+
+  margin: 35px auto 0;
+
+  border: none;
+
+  border-radius: 16px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1000px) {
+
+  .movie-details-main {
+    flex-direction: column;
+  }
+
+  .movie-details-poster {
+    width: min(300px, 100%);
+
+    margin: auto;
+  }
+
+  .movie-details-title {
+    font-size: 30px;
+  }
+
+  .movie-details-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .movie-details {
+    width: 100%;
+
+    margin: 25px 0;
+
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+  .movie-details-title {
+    font-size: 26px;
+  }
+
+  .movie-details-tagline {
+    font-size: 16px;
+  }
+
+  .movie-overview {
+    font-size: 15px;
+  }
+
+  .movie-details iframe {
+    margin-top: 25px;
+  }
+}
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 20px;
+
+  background: #302b40;
+  color: #e8ddff;
+
+  border: 1px solid #8b70bd;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #8b5cf6;
+  color: white;
+  transform: translateX(-4px);
+}
+
+.details-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.back-button {
+  margin: 0;
+}
+.movie-details {
+  padding: 25px 30px;
+  box-sizing: border-box;
+}

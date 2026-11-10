@@ -1,0 +1,137 @@
+.appContentDark{
+    background-color:#242430 
+
+}
+.appContentLight{
+  background-color:#ffffff 
+
+}
+
+/* Dark & Light */
+.navbar-dark {
+  background-color: #24232e;
+  color: white;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  color: #25212d;
+}
+.darkLogo{
+  color: #ffffff;
+  
+}
+.lightLogo{
+  color: #242430;
+}
+.searchDark{
+  background-color:#242430 
+}
+.searchLight{
+
+background-color: #ffffff;
+}
+.inputDark{
+  background-color: #242430;
+  color: #ffffff;
+}
+.inputLight{
+  background-color: #ffffff;
+  color:#242430;
+}
+.themeToggleDark{
+background-color: #242430;
+}
+.themeToggleLight{
+background-color: #ffffff;
+}
+.light{
+  background-color:   #F3F4F8;
+  color:black;
+}
+.dark{
+  
+  background-color: #040404;
+  color: #F5F7FB;
+}
+.lighth1{
+  
+  color:black;
+  
+}
+.darkh1{
+  
+  background-color: #242430 ;
+  color: #F5F7FB;
+}
+.lightCard{
+  background-color: #FFFFFF;
+  color:#64748B;
+  
+}
+.darkCard{
+  
+  background-color: #1f1e1e;
+  color: #FFFFFF;
+}
+
+.lightDetails{
+  background-color: #b8a0a0;
+  border: 1px solid rgb(37, 37, 37);
+  color:black;
+  
+}
+.darkDetails {
+  
+  background-color: #1f1e1e;
+  color: #FFFFFF;
+}
+
+
+
+
+
+/* هذا مخصص لون  خلفيت الازرار داخل الموف ديتال*/
+.darkItem{
+color: #f9f3f3;
+}
+
+.lightItem{
+  color: #1f1e1e;
+  
+}
+.darkTagline
+{
+  color: #F5F7FB;
+}
+.lightTagline
+{
+  color: #1f1e1e;
+}
+
+.darkLabel
+{
+  color: #76658B;
+  font-weight: 700;
+}
+.lightLabel{
+  color: #1f1e1e;
+  font-weight: 700;
+}
+.darkValue{
+  color: #76658B
+}
+
+.lightValue{
+
+  color: #76658B
+
+
+}
+.topLight{
+color: #76658B;
+}
+.topDark{
+color: #ffffff;
+}
+

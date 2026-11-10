@@ -1,0 +1,129 @@
+.app{
+display: flex;
+flex-direction: column;}
+
+
+
+.movies-list {
+  display: grid;
+grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+
+  gap: 25px;
+  padding: 20px 4%;
+  list-style: none;
+  margin-top: 35px;
+  
+  box-sizing: border-box;
+}
+
+
+
+
+#root {
+      width: 1457px;}
+.div-buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.div-buttom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 11px 20px;
+
+  border: 1px solid #3b3b4a;
+  border-radius: 10px;
+
+  background: #242430;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.div-buttom button:hover {
+  background: #333342;
+  border-color: #66667a;
+  transform: translateY(-2px);
+}
+
+.div-buttom button:active {
+  transform: translateY(0);
+}
+
+.div-buttom svg {
+  font-size: 17px;
+}
+.top-rated-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.top-rated-list::-webkit-scrollbar {
+  display: none;
+}
+
+.top-rated-list > * {
+  flex: 0 0 200px;
+}
+.top-rated-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.top-rated-wrapper button {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #55516b;
+  border-radius: 50%;
+
+  background: #302d3d;
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.top-rated-wrapper button:hover {
+  background: #8b5cf6;
+  transform: scale(1.1);
+}
+.top-rated-list .card {
+  flex: 0 0 215px;
+  width: 215px;
+}
+.top-rated-section {
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.35);
+}
+
